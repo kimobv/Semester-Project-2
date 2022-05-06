@@ -1,9 +1,9 @@
 # Semester-Project-2
 
-Goal
+# Goal
 To create an e-commerce website that has both customer-facing and admin sections. Both sections should be responsive and the website will be populated by a Strapi API supplied by Noroff.
 
-Brief
+# Brief
 You are to build an e-commerce website. You can choose the theme of your website. It should follow the site architecture described below.
 
 Design your website using your favourite tool. You will need to find a suitable logo. If you decide to create a logo yourself, do not spend too much time on it.
@@ -18,11 +18,11 @@ The website must be responsive on all devices.
 
 Building a checkout and payment system is not a part of the project.
 
-Level 1 is required.
+**Level 1 is required.**
 
-Level 2 is optional.
+**Level 2 is optional.**
 
-Strapi API
+# Strapi API
 The Strapi project can be found here.
 
 Install the npm dependencies and then run npm run develop:
@@ -38,7 +38,8 @@ User credentials
 email: admin@admin.com
 username: admin
 password: Pass1234
-Level 1 (required)
+
+# Level 1 (required)
 Customer-facing pages
 Home page
 The home page must include:
@@ -92,7 +93,7 @@ You can find the fields for each in Strapi. Use only one to display a product im
 Delete existing product
 Allow products to be deleted. Before a product is deleted you must display a confirmation dialog. The product should only be deleted if the user confirms.
 
-Level 2 (optional)
+# Level 2 (optional)
 Create your own API for the site. You can use any backend stack (e.g. Strapi, Wordpress REST API, Firebase, etc) but it MUST be publicly hosted on a server.
 
 The API must include all the functionality in the provided Strapi API and you can add any additional functionality.
@@ -101,7 +102,7 @@ It MUST be publicly hosted and accessible, you cannot submit a custom API with y
 
 We have created a one-click Strapi deployment to Heroku for this project. All you need is a Heroku account and a Cloudinary account, both are free.
 
-FAQ
+# FAQ
 You can use CSS libraries like Bootstrap.
 Use either Sass or Styled Components for your styles. Using BEM is optional but using proper class names is important.
 Use vanilla (regular) JavaScript for the project and split your code up using modules (imports/exports).
@@ -122,7 +123,7 @@ You don’t have to write an academic-style report, just discuss the project in 
 
 The report template can be found here.
 
-Submission
+# Submission
 Create a folder called your-name-semester-project-2, e.g. mary-smith-semester-project-2.
 Add your project files and report to the folder. DO NOT submit the Strapi API files or custom API code if you created one. If you have a node_modules folder in your project make sure to exclude it from your submission.
 Zip the folder and submit the zip file.
