@@ -1,0 +1,50 @@
+.product-page-container {
+  @include max-width(1800px);
+
+  .product-page-text {
+    margin: 10px;
+  }
+
+  .product-container {
+    @extend .flex-container;
+  }
+}
+
+.product-content {
+  margin: 10px;
+  background-color: $color-white;
+  box-shadow: 6px 6px 6px $color-input-fields;
+  padding: 10px;
+
+  h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+    @media (min-width: $computer-min-width) {
+      height: 380px;
+      width: 380px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.search {
+  height: 60px;
+  width: 100%;
+  background-color: $color-white;
+  border: none;
+  font-size: 1.3em;
+}

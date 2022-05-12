@@ -1,0 +1,80 @@
+.hero-banner {
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  min-width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    height: 700px;
+  }
+}
+
+.home-featured {
+  background-color: $color-background;
+  padding: 10px 20px 60px 20px;
+  margin: -110px 20px 100px 20px;
+  box-shadow: 6px 6px 6px $color-input-fields;
+  border-top: 4px solid $color-brand;
+  border-radius: 2px;
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 4em;
+    }
+  }
+
+  .featured-container {
+    @extend .flex-container;
+  }
+
+  .featured-content {
+    @extend .product-content;
+  }
+}
+
+.home-all-sneakers,
+.home-about {
+  background-color: $color-white;
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 6px 6px 6px $color-input-fields;
+  border-top: 2px solid $color-brand;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $color-brand;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  button {
+    width: 40%;
+  }
+
+  @media (min-width: $computer-min-width) {
+    @include max-width(800px);
+    flex-direction: row;
+
+    .home-all-sneakers-text {
+      flex-basis: 140%;
+      margin-left: 20px;
+    }
+
+    .home-about-text {
+      flex-basis: 207%;
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sneakers | Edit or delete products</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="admin users can edit or delete products">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-container"></div>
+        </header>
+        <main> 
+            <nav class="where-am-i-container">
+                <ul>
+                    <li><a href="index.html">Home<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="products.html">Shoes<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="edit-delete-product.html" class="where-am-i-now">Edit or delete product</a></li>
+                </ul>
+            </nav>
+            <form form action="/api/endpoint" method="POST" id="form" class="edit-delete-form">
+                <h1>Edit or delete product</h1>             
+                <div class="message-container"></div>
+                <div class="loader"></div>
+                <div>
+                    <label for="title">Product title *</label>
+                    <div class="form-error" id="titleError">Pleace fill out product title, more than 2 characters</div>
+                    <input type="text" id="title" name="title"/>                            
+                </div>  
+                <div>   
+                    <label for="price">Product price *</label>
+                    <div class="form-error" id="priceError">Pleace fill out product price, more than 2 numbers</div>
+                    <input type="number" id="price" name="price"/>                 
+                </div>
+                <div>   
+                    <label for="description">Product Description *</label>
+                    <div class="form-error" id="descriptionError">Pleace fill out product description, more than 30 characters</div>
+                    <textarea id="description" name="description" rows="10"></textarea>                     
+                </div>
+                <div>
+                    <div class="image-container"></div>
+                    <label for="file">Upload a new image, it will replace the current image<input type="file" class="upload-image" name="image" id="image"></label>               
+                </div>
+                <div class="checkbox-container">                 
+                    <input type="checkbox" name="featured" value="true" id="featured">
+                    <label for="featured" >Featured product on homepage</label> 
+                </div>
+                <input id="id" type="hidden" />
+                <button class="btn orange">Edit</button>
+                <div class="delete-container"></div>               
+            </form>  
+        </main>
+    </div>
+    <footer>
+        <div class="footer-contact">  
+            <a href="tel:99999999">Call: 99999999</a>
+            <a href="mailto:sneakers@gmail.com">Email: sneakers@gmail.com</a>
+        </div>  
+        <div> 
+            <a href="https://www.facebook.com" target="_blank" aria-label="facbook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com.com" target="_blank" aria-label="snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+        </div>
+    </footer>
+    <script src="js/editDeleteProduct.js" type="module"></script>
+</body>
+</html>
