@@ -1,19 +1,15 @@
-import { heroBannerUrl  } from "../settings/api.js";
-import { displayMessage } from "./displayMessage.js";
+import { heroBannerUrl } from '../settings/api.js';
+import { displayMessage } from './displayMessage.js';
 
 export async function homeBanner() {
-    const heroBannerContainer = document.querySelector(".hero-banner-container");
-    
-    try {
-        const response = await fetch(heroBannerUrl); 
-        const products = await response.json(); 
+	const heroBannerContainer = document.querySelector('#hero');
 
-        heroBannerContainer.innerHTML = `<div>
-                                            <div style="background-image: url(${products.hero_banner.formats.medium.url})" class="hero-banner"></div> 
-                                        </div>` 
-    }
+	try {
+		const response = await fetch(heroBannerUrl);
+		const products = await response.json();
 
-    catch(error) {
-        displayMessage("error", "An error has occoured", ".hero-banner-container"); 
-    }
-} 
+		heroBannerContainer.innerHTML = `<img src="${products.hero_banner.url}" class="flex-grow-1" alt="...">`;
+	} catch (error) {
+		displayMessage('error', 'An error has occoured', '#hero');
+	}
+}

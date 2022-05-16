@@ -12,7 +12,7 @@ async function featuredProducts() {
 		const response = await fetch(productUrl);
 		const products = await response.json();
 
-		const featuredContainer = document.querySelector('.featured-container');
+		const featuredContainer = document.querySelector('#featured');
 		featuredContainer.innerHTML = '';
 
 		const username = getUsername();
@@ -20,13 +20,15 @@ async function featuredProducts() {
 		if (!username) {
 			for (var i = 0; i < products.length; i++) {
 				if (products[i].featured === true) {
-					featuredContainer.innerHTML += `<div class="featured-content">
-                                                        <a href="products-details.html?id=${products[i].id}" aria-label="${products[i].title}">
-                                                            <img src="${products[i].image.formats.medium.url}" alt="${products[i].title}">
-                                                            <h2>${products[i].title}<h2>
-                                                            <p>kr. ${products[i].price}<p> 
-                                                        </a>
-                                                    </div>`;
+					featuredContainer.innerHTML += `<div class="card mb-4 rounded-4 shadow-sm">
+											          <div class="card-header py-3">
+											            <img src="${products[i].image.formats.medium.url}" alt="${products[i].title}">
+											          </div>
+											          <div class="card-body">
+											            <h3 class="card-title pricing-card-title">${products[i].title}</h3>
+											            <button type="button" class="w-100 btn btn-lg btn-outline-primary">kr. ${products[i].price}</button>
+											          </div>
+											        </div>`;
 				}
 			}
 		}
