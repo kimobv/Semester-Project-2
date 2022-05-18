@@ -91,7 +91,6 @@ async function addProduct() {
 			form.reset();
 		}
 	} catch (error) {
-		console.log(error);
 		displayMessage('error', 'An error has occured', '.message-container');
 	}
 }

@@ -9,7 +9,7 @@ export default function createMenu() {
 
 	if (username) {
 		menuContainer.innerHTML = `<div class="container-fluid">
-					<a class="navbar-brand m-2 pe-2" href="index.html"><h2>ShirTshoP</h2></a>
+					<a class="navbar-brand m-2 pe-2" href="index.html"><h2 style="text-decoration: none; border-bottom:5px solid orange;">ShirTshoP</h2></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -27,7 +27,7 @@ export default function createMenu() {
 							<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Control Panel</button>
 							<ul class="dropdown-menu dropdown-menu-lg-end">
 								<li><a class="dropdown-item" href="add-product.html">Add</a></li>
-								<li><a class="dropdown-item" href="edit-delete-product.html">Edit</a></li>
+								<li><a class="dropdown-item" href="products.html">Edit</a></li>
 								<li><hr class="dropdown-divider" /></li>
 								<li><button id="logoutButton" class="dropdown-item">Log out</button></li>
 							</ul>
@@ -38,7 +38,7 @@ export default function createMenu() {
 
 	if (!username) {
 		menuContainer.innerHTML = `<div class="container-fluid">
-					<a class="navbar-brand m-2 pe-2" href="index.html"><h2>ShirTshoP</h2></a>
+					<a class="navbar-brand m-2 pe-2" href="index.html"><h2 style="text-decoration: none; border-bottom:5px solid orange;">ShirTshoP</h2></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -52,7 +52,7 @@ export default function createMenu() {
 							</li>
 						</ul>
 						<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-							<a href="cart.html" class="btn btn-primary me-md-2 ${pathname === '/cart.html' ? 'active' : ''}" type="button"><i class="fas fa-shopping-bag"><span class="cart-count ms-2">0</span></i></a>
+							<a href="cart.html" class="btn btn-primary me-md-2 ${pathname === '/cart.html' ? 'active' : ''}" type="button"><i class="fas fa-shopping-bag"><span class="cart-count ms-2"></span></i></a>
 								<a href="login.html" class="btn btn-primary ${pathname === '/cart.html' ? 'active' : ''}" type="button"><i class="fas fa-user"></i></a>
 						</div>
 					</div>

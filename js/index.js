@@ -20,15 +20,17 @@ async function featuredProducts() {
 		if (!username) {
 			for (var i = 0; i < products.length; i++) {
 				if (products[i].featured === true) {
-					featuredContainer.innerHTML += `<div class="card mb-4 rounded-4 shadow-sm">
-											          <div class="card-header py-3">
-											            <img src="${products[i].image.formats.medium.url}" alt="${products[i].title}">
-											          </div>
-											          <div class="card-body">
-											            <h3 class="card-title pricing-card-title">${products[i].title}</h3>
-											            <button type="button" class="w-100 btn btn-lg btn-outline-primary">kr. ${products[i].price}</button>
-											          </div>
-											        </div>`;
+					featuredContainer.innerHTML += `<div class="col">
+														<div class="card border-dark mb-3" style="width: 18rem;">
+															<a href="products-details.html?id=${products[i].id}" aria-label="${products[i].title}">
+																<img src="${products[i].image.formats.medium.url}" class="ratio ratio-1x1" alt="${products[i].title}">
+																<div class="card-body text-center">
+																	<h5 class="card-title" style="text-decoration: none;">${products[i].title}</h5>
+																	<h4 class="card-text text-danger">kr. ${products[i].price}</h4>
+																</div>
+															</a>
+														</div>
+													</div>`;
 				}
 			}
 		}
@@ -36,13 +38,18 @@ async function featuredProducts() {
 		if (username) {
 			for (var i = 0; i < products.length; i++) {
 				if (products[i].featured === true) {
-					featuredContainer.innerHTML += `<div class="featured-content">
-                                                        <a href="edit-delete-product.html?id=${products[i].id}" aria-label="${products[i].title}">
-                                                            <img src="${products[i].image.formats.medium.url}" alt="${products[i].title}">
-                                                            <h2>${products[i].title}<h2>
-                                                            <p>kr. ${products[i].price}<p> 
-                                                        </a>
-                                                    </div>`;
+					featuredContainer.innerHTML += `<div class="col">
+														<div class="card border-dark mb-3" style="width: 18rem;">
+															<a href="edit-delete-product.html?id=${products[i].id}" aria-label="${products[i].title}">
+																<img src="${products[i].image.formats.medium.url}" class="ratio ratio-1x1" alt="${products[i].title}">
+																<div class="card-body text-center">
+																	<h5 class="card-title" style="text-decoration: none;">${products[i].title}</h5>
+																	<h4 class="card-text text-danger">kr. ${products[i].price}</h4>
+																	<button type="button" class="btn btn-outline-primary">Edit</button>
+																</div>
+															</a>
+														</div>
+													</div>`;
 				}
 			}
 		}
