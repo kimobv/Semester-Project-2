@@ -4,8 +4,10 @@ import { getFromStorage } from './utils/localStorage.js';
 import { cartList } from './settings/variables.js';
 import { displayMessage } from './ui/displayMessage.js';
 import { addProductToCart } from './productFunctions/addProductToCart.js';
+import { featuredProducts } from './index.js';
 
 createMenu();
+featuredProducts();
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

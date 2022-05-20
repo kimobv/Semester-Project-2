@@ -60,5 +60,7 @@ export default function createMenu() {
 	}
 
 	logoutButton();
-	displayCartNumber();
+	if (!username) {
+		displayCartNumber();
+	}
 }

@@ -5,7 +5,7 @@ import { displayMessage } from '../ui/displayMessage.js';
 
 export function deleteProduct(id) {
 	const deleteContainer = document.querySelector('.delete-container');
-	deleteContainer.innerHTML = `<button type="button" class="btn delete">Delete</button>`;
+	deleteContainer.innerHTML = `<button type="button" class="btn btn-danger delete">Delete</button>`;
 	const button = document.querySelector('.delete');
 
 	button.onclick = async function () {
