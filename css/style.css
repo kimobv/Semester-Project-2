@@ -2,7 +2,7 @@ body {
 	background-image: url(../images/texture.png);
 	background-repeat: repeat;
 }
-banner {
+.banner {
 	width: 100%;
     	max-height: 500px;
     	object-fit: cover;
