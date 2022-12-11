@@ -8,10 +8,9 @@ export async function homeBanner() {
 
 	try {
 		const response = await fetch(heroBannerUrl);
-		const products = await response.json();
-		//heroBannerContainer.innerHTML = `<img src="${products.hero_banner.url}" class="flex-grow-1" alt="...">`;
+		
 		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="banner flex-grow-1" alt="...">`;
-	} catch (error) {
+	} catch () {
 		
 		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="banner flex-grow-1" alt="...">`;
 	}
