@@ -10,6 +10,7 @@ export async function homeBanner() {
 		//heroBannerContainer.innerHTML = `<img src="${products.hero_banner.url}" class="flex-grow-1" alt="...">`;
 		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="flex-grow-1" alt="...">`;
 	} catch (error) {
-		displayMessage('error', 'An error has occoured', '#hero');
+		//displayMessage('error', 'An error has occoured', '#hero');
+		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="flex-grow-1" alt="...">`;
 	}
 }
