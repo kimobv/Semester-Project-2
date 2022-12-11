@@ -3,6 +3,7 @@ import { displayMessage } from './displayMessage.js';
 
 export async function homeBanner() {
 	const heroBannerContainer = document.querySelector('#hero');
+	console.log(response);
 
 	try {
 		const response = await fetch(heroBannerUrl);
