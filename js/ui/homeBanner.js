@@ -10,7 +10,7 @@ export async function homeBanner() {
 		const response = await fetch(heroBannerUrl);
 		
 		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="banner flex-grow-1" alt="...">`;
-	} catch () {
+	} catch {
 		
 		heroBannerContainer.innerHTML = `<img src="https://res.cloudinary.com/kimobv/image/upload/v1670793068/hero.jpg" class="banner flex-grow-1" alt="...">`;
 	}
