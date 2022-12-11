@@ -2,6 +2,11 @@ body {
 	background-image: url(../images/texture.png);
 	background-repeat: repeat;
 }
+banner {
+	width: 100%;
+    	max-height: 500px;
+    	object-fit: cover;
+}
 .btn-primary {
 	background-color: #212529 !important;
 	color: orange !important;
