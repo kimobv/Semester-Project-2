@@ -47,7 +47,7 @@ async function detailsProduct() {
                                             <div class="col-md-8">
                                               <div class="card-body details-information">
                                                 <h1 class="card-title">${details.title}</h1>
-                                                <p class="card-text">>${details.description}</p>
+                                                <p class="card-text">${details.description}</p>
                                                 <h4>kr. ${details.price}<h4>
                                                 <button class="cta ${cssClass} btn btn-primary btn-lg" data-id="${details.id}" data-title="${details.title}" data-price="${details.price}" data-description="${details.description}" data-image="${image}">${btnText}</button>
                                               </div>
