@@ -10,6 +10,6 @@ export async function homeBanner() {
 
 		heroBannerContainer.innerHTML = `<img src="${products.hero_banner.url}" class="banner flex-grow-1" alt="...">`;
 	} catch (error) {
-		displayMessage('error', 'An error has occoured', '.message-container');
+		displayMessage('error', 'An errorasd has occoured', '.message-container');
 	}
 }
