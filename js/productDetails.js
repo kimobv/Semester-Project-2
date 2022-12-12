@@ -22,8 +22,7 @@ async function detailsProduct() {
 		const response = await fetch(url);
 		const details = await response.json();
 		console.log(details);
-		const image = details.image.formats.large.url;
-		console.log(details);
+		const image = details.image.formats.medium.url;
 		whereAmI.innerHTML = `<a href="products-details.html?id=${details.id}" aria-label="${details.title}" class="text-muted text-decoration-none">${details.title}</a>`;
 		document.title += ` ${details.title}`;
 
