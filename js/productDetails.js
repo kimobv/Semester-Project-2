@@ -21,7 +21,7 @@ async function detailsProduct() {
 	try {
 		const response = await fetch(url);
 		const details = await response.json();
-		console.log(details);
+
 		const image = details.image.formats.medium.url;
 		whereAmI.innerHTML = `<a href="products-details.html?id=${details.id}" aria-label="${details.title}" class="text-muted text-decoration-none">${details.title}</a>`;
 		document.title += ` ${details.title}`;
@@ -61,7 +61,7 @@ async function detailsProduct() {
 			button.addEventListener('click', addProductToCart);
 		});
 	} catch (error) {
-		displayMessage('error', 'A big error has occoured', '.product-details-container');
+		displayMessage('error', 'An error has occoured', '.product-details-container');
 	}
 }
 
