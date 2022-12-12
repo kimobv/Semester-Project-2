@@ -7,7 +7,7 @@ export async function homeBanner() {
 
 	try {
 		const response = await fetch(heroBannerUrl);
-		heroBannerContainer.innerHTML = `<img src="${response.url}" class="banner flex-grow-1" alt="...">`;
+		heroBannerContainer.innerHTML = `<img src="${response.gero_banner.formats.large.url}" class="banner flex-grow-1" alt="...">`;
 	} catch (error) {
 		displayMessage('error', 'An error has occoured', '#hero');
 	}
