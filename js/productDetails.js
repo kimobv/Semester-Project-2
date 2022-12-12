@@ -61,7 +61,7 @@ async function detailsProduct() {
 			button.addEventListener('click', addProductToCart);
 		});
 	} catch (error) {
-		displayMessage('error', 'An error has occoured', '.product-details-container');
+		displayMessage('error', 'A big error has occoured', '.product-details-container');
 	}
 }
 
