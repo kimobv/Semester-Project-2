@@ -1,6 +1,6 @@
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://drive.google.com/uc?id=1ysPMiyBSHGuUNUWloMrG5NgXhxzInamW)
 
 A simple overview of the use/purpose of the project.
 
