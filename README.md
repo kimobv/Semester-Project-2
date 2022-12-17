@@ -1,4 +1,4 @@
-# Your project title
+# ShirTshoP - A storefront for shirts
 
 ![image](https://drive.google.com/uc?id=1ysPMiyBSHGuUNUWloMrG5NgXhxzInamW)
 
