@@ -2,69 +2,47 @@
 
 ![image](https://drive.google.com/uc?id=1ysPMiyBSHGuUNUWloMrG5NgXhxzInamW)
 
-A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+A project to pratice setting up a storefront with an admin dashboard where you can edit, delete and register new products for the store.
+It's set up with strapi api and hosted on heroku, images uploaded is hosted on Cloudinary
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- Bootstrap CSS
+-JavaScript
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+You can see the live version of the project [here!](https://pe1shirtshop.netlify.app)
+
+Or you can clone the reopository and run it locally
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:kimobv/Semester-Project-2.git
 ```
 
-2. Install the dependencies:
+2. Run live server in Visual Studio Code and see the project in your browser
 
-```
-npm install
-```
 
-### Running
+## Manuvering the project
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you wish to test the admin funcitons of the website simply log in with the following credentials: email: admin@admin.com username: admin password: Pass1234
 
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+[My Twitter page](www.twitter.com/kim0bv)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](www.linkedin.com/in/kimobv)
 
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
