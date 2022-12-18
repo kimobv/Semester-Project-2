@@ -30,7 +30,7 @@ Or you can clone the reopository and run it locally
 git clone git@github.com:kimobv/Semester-Project-2.git
 ```
 
-2. Run [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code and see the project in your browser
+2. Run [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code and experience the project in your browser
 
 
 ## Manuvering the project
