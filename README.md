@@ -46,5 +46,5 @@ Email - kimobv@proton.me
 
 Twitter [@kim0bv](https://www.twitter.com/kim0bv)
 
-My [LinkedIn](https://www.linkedin.com/in/kimobv)
+LinkedIn [kimobv](https://www.linkedin.com/in/kimobv)
 
