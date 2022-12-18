@@ -6,7 +6,9 @@
 ## Description
 
 A project to pratice setting up a storefront with an admin dashboard where you can edit, delete and register new products for the store.
-It's set up with strapi api and hosted on heroku, images uploaded is hosted on Cloudinary
+It's set up with strapi api and hosted on heroku, images uploaded is hosted on Cloudinary.
+
+This project was a shcool assignment and the task can be read [Here](https://github.com/kimobv/Semester-Project-2/blob/main/README.old.md)
 
 
 ## Built With
@@ -35,7 +37,12 @@ git clone git@github.com:kimobv/Semester-Project-2.git
 
 ## Manuvering the project
 
-If you wish to test the admin funcitons of the website simply log in with the following credentials: email: admin@admin.com username: admin password: Pass1234
+If you wish to test the admin funcitons of the website simply log in with the following credentials:
+```
+email: admin@admin.com
+username: admin
+password: Pass1234
+```
 
 ## Contact
 
