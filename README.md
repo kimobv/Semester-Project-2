@@ -14,8 +14,9 @@ It's set up with strapi api and hosted on heroku, images uploaded is hosted on C
 You can list a the tech stack that you've used over here
 
 - HTML
-- Bootstrap CSS
--JavaScript
+- CSS
+- Bootstrap
+- JavaScript
 
 ## Getting Started
 
