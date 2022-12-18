@@ -40,7 +40,9 @@ If you wish to test the admin funcitons of the website simply log in with the fo
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+If you have any questions or wish to get in touch:
+
+[My email address](kimobv@proton.me)
 
 [My Twitter page](www.twitter.com/kim0bv)
 
