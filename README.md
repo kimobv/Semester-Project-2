@@ -5,7 +5,7 @@
 
 ## Description
 
-A project to pratice setting up a storefront with an admin dashboard where you can edit, delete and register new products for the store.
+A project to practice setting up a storefront with an admin dashboard where you can edit, delete and register new products for the store.
 It's set up with strapi api and hosted on heroku, images uploaded is hosted on Cloudinary.
 
 This project was a shcool assignment and the task can be read [Here](https://github.com/kimobv/Semester-Project-2/blob/main/README.old.md)
@@ -20,9 +20,9 @@ This project was a shcool assignment and the task can be read [Here](https://git
 
 ## Getting Started
 
-### Installing
-
 You can see the live version of the project [here!](https://pe1shirtshop.netlify.app)
+
+### Installing
 
 Or you can clone the reopository and run it locally
 
