@@ -42,9 +42,9 @@ If you wish to test the admin funcitons of the website simply log in with the fo
 
 If you have any questions or wish to get in touch:
 
-[My email address](kimobv@proton.me)
+My email address - kimobv@proton.me
 
-[My Twitter page](www.twitter.com/kim0bv)
+[My Twitter page](https://www.twitter.com/kim0bv)
 
-[My LinkedIn page](www.linkedin.com/in/kimobv)
+[My LinkedIn page](https://www.linkedin.com/in/kimobv)
 
